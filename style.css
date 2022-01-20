@@ -70,7 +70,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.container {
+/* .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ textarea {
 table {
   width: 100%;
   max-width: 50rem;
-  
+}
   tr:nth-child(even), th {
     color: #ccc;
     font-weight: normal;
@@ -113,11 +113,11 @@ table {
     display: block;
     width: 100%;
   }
-}
+
 
 .stage-earth {background-color: #FFA726};
 .stage-mercury {background-color: #9CCC65};
 .stage-venus {background-color: #FF8A65};
 .stage-mars {background-color: #B3E5FC};
 .stage-jupiter {background-color: #81D4FA};
-.stage-saturn {background-color: #26C6DA};
+.stage-saturn {background-color: #26C6DA}; */
