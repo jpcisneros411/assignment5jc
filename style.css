@@ -70,7 +70,7 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* .container {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,12 +78,13 @@ textarea {
   min-height: 100vh;
   padding: 4rem 0;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
+} 
 
-table {
+table-responsive {
   width: 100%;
   max-width: 50rem;
 }
+/*
   tr:nth-child(even), th {
     color: #ccc;
     font-weight: normal;
@@ -98,7 +99,7 @@ table {
     font-weight: normal;
     border-top: thin dotted #ccc;
   }
-  
+  /*
   td {
     font-size: 0.8rem;
     font-weight: bold;
