@@ -4,14 +4,21 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 //var inputData = document.querySelector(".inputData");
 var inputData = document.getElementsByClassName("inputData");
 console.log(inputData);
-let hoverTime = document.getElementById("timeColumn");
-let happening = document.getElementById("happening");
-let hoverSave = document.getElementById("saveColumn");
-//var clickedSlot;
-//clickedHappening;
-clickedSlot = happening.addEventListener("click", clickedHappening);
+let hoverTime = document.getElementsByClassName("timeColumn");
+//let happening = document.querySelector(".happening");
+let happening = document.querySelectorAll(".happening").forEach(item => {
+    item.addEventListener("click", clickedHappening => {
+      //handle click
+      console.log("potato");
+      console.log(clickedHappening);
+    })
+  })
+let hoverSave = document.getElementsByClassName("saveColumn");
+var clickedSlot;
+var clickedHappening;
+//clickedSlot = happening.addEventListener("click", clickedHappening);
 //inputData.removeAttribute("class");
 function clickedHappening(){
- inputData.setAttribute("class","dataGiven");
- console.log(potato);
+    console.log("potato");
+ //inputData.setAttribute("class","dataGiven");
 }
