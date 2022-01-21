@@ -1,7 +1,9 @@
 .inputData{
   display: none;
 }
-
+.dataGiven{
+  display: contents;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
