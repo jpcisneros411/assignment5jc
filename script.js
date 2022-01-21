@@ -19,7 +19,7 @@ let hoverTime = document.getElementsByClassName("timeColumn");
 $(document).ready(function(){
     $('.happening').on('click',function(){
         alert('you have clicked!');
-        $(inputData).css('display','flex');
+        $(this).css('display','flex');
         console.log("potato");
     });
 });
