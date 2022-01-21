@@ -1,3 +1,4 @@
+
 var today = moment();
 console.log(today);
 $("#currentDay").text(today.format("MMM Do, YYYY"));
@@ -6,31 +7,41 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 var inputData = document.getElementsByClassName("inputData");
 console.log(inputData);
 let hoverTime = document.getElementsByClassName("timeColumn");
-//let happening = document.querySelectorAll(".happening").forEach(item => {
+// let happening = document.querySelectorAll(".happening").forEach(item => {
 //     item.addEventListener("click", clickedHappening => {
 //       //handle click
 //       console.log("potato");
-//       console.log(clickedHappening);
-//       let happening = document.getElementById(".inputData").style.display=inside;
+//       //console.log(clickedHappening);
+//       //let happening = document.getElementById(".inputData").style.display=inside;
 //     })
 //   })
 
-//let happening = document.querySelectorAll(".happening").forEach(item => {
-let happening = document.getElementsByClassName(".happening").forEach(item => {
-//$('a.some-class').click(function() {
-    $(happening).click(function(event){
-        switch (this.id) {
-            case 'one':
-              // do something
-              break;
-            case 'two':
-              // do something
-              break;
-            default:
-              // do something
-              break;
-        }
+$(document).ready(function(){
+    $('.happening').on('click',function(){
+        alert('you have clicked!');
+        $(this).css('display','flex');
+        console.log("potato");
     });
+});
+
+//let happening = document.querySelectorAll(".happening").forEach(item => {
+///let happening = document.getElementsByClassName("happening").forEach(item => {
+   /// $(happening).click(function(event){
+//$('a.some-class').click(function() {
+    //     switch (this.class) {
+    //         case 'one':
+    //             console.log("potato");
+    //             dataGiven;
+    //           break;
+    //         // case 'two':
+    //         //   // do something
+    //         //   break;
+    //         // default:
+    //         //   // do something
+    //         //   break;
+    //     }
+    // }
+    // )};
 let hoverSave = document.getElementsByClassName("saveColumn");
 var clickedSlot;
 var clickedHappening;
@@ -39,4 +50,4 @@ var clickedHappening;
 //function clickedHappening(){
     //console.log("fajitas");
  //inputData.setAttribute("class","dataGiven");
-//}
+//};
