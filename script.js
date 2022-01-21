@@ -6,14 +6,31 @@ $("#currentDay").text(today.format("MMM Do, YYYY"));
 var inputData = document.getElementsByClassName("inputData");
 console.log(inputData);
 let hoverTime = document.getElementsByClassName("timeColumn");
-let happening = document.querySelectorAll(".happening").forEach(item => {
-    item.addEventListener("click", clickedHappening => {
-      //handle click
-      console.log("potato");
-      console.log(clickedHappening);
-      
-    })
-  })
+//let happening = document.querySelectorAll(".happening").forEach(item => {
+//     item.addEventListener("click", clickedHappening => {
+//       //handle click
+//       console.log("potato");
+//       console.log(clickedHappening);
+//       let happening = document.getElementById(".inputData").style.display=inside;
+//     })
+//   })
+
+//let happening = document.querySelectorAll(".happening").forEach(item => {
+let happening = document.getElementsByClassName(".happening").forEach(item => {
+//$('a.some-class').click(function() {
+    $(happening).click(function(event){
+        switch (this.id) {
+            case 'one':
+              // do something
+              break;
+            case 'two':
+              // do something
+              break;
+            default:
+              // do something
+              break;
+        }
+    });
 let hoverSave = document.getElementsByClassName("saveColumn");
 var clickedSlot;
 var clickedHappening;
